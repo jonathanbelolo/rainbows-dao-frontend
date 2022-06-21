@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { ConnectButton } from 'web3uikit'
 
 export default function Home() {
   return (
@@ -15,7 +16,10 @@ export default function Home() {
       <main>
         <h1> 
           Rainbows DAO
-        </h1>        
+        </h1>      
+        <nav>
+          <ConnectButton moralisAuth={false}/>
+        </nav>  
       </main>
 
     </div>
